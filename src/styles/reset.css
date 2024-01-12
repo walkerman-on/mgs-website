@@ -1,0 +1,29 @@
+/* *:not(svg *):not(span > svg) {
+	all: unset;
+	display: revert;
+	list-style: none;
+} */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+ul,
+ol,
+li {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font: inherit;
+	font-size: 100%;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-primary-200);
+}

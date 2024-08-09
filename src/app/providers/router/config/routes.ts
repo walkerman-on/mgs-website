@@ -4,3 +4,4 @@ export const getNotFound = () => '*';
 export const getDocuments = () => "/documents"
 export const getFeedback = () => "/feedback"
 export const getStaffAndEquipment = () => "/staff__equipment"
+export const getRsClass = () => "https://rs-class.org/"

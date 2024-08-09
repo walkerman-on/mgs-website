@@ -8,7 +8,7 @@ interface IAppLink {
 
 export const AppLink: FC<IAppLink> = memo(({ children, to }) => {
 	return (
-		<NavLink to={to} className={({ isActive }) => (isActive ? "text-color-accent" : "")}>
+		<NavLink to={to} className={({ isActive }) => (isActive ? "text-color-accent bg-color-primary-200" : "")}>
 			{children}
 		</NavLink>
 	);

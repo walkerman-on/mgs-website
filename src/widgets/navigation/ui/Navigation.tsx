@@ -11,13 +11,12 @@ export const Navigation = () => {
 	const navLinks: NavLink[] = [
 		{ title: "Главная", link: getMain() },
 		{ title: "О компании", link: getAbout() },
-		{ title: "Персонал и оборудование", link: getStaffAndEquipment() },
 		{ title: "Документы", link: getDocuments() },
-		{ title: "Обратная связь", link: getFeedback() },
+		{ title: "Оборудование", link: getStaffAndEquipment() },
 	]
 	return (
 		<nav className='pb-4 px-10'>
-			<ul className="flex gap-16 justify-center items-center">
+			<ul className="flex gap-16 justify-center items-center max-tablet:gap-4 max-phone:grid max-phone:grid-cols-2 max-phone:grid-rows-2 max-phone:gap-1">
 				{
 					navLinks?.map((item, index) => (
 						<li className="text-center" key={index}>

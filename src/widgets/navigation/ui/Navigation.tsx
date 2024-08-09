@@ -1,31 +1,32 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { getAbout } from 'app/providers/router';
+import { getAbout, getDocuments, getFeedback, getMain, getStaffAndEquipment } from 'app/providers/router';
+import { AppLink } from 'shared/ui/app-link';
+
+interface NavLink {
+	title: string;
+	link: string;
+}
 
 export const Navigation = () => {
+	const navLinks: NavLink[] = [
+		{ title: "Главная", link: getMain() },
+		{ title: "О компании", link: getAbout() },
+		{ title: "Персонал и оборудование", link: getStaffAndEquipment() },
+		{ title: "Документы", link: getDocuments() },
+		{ title: "Обратная связь", link: getFeedback() },
+	]
 	return (
-		<nav >
-			<ul className="flex gap-16 justify-center">
-				<li className="">
-					<NavLink to={getAbout()}>
-						<h2 className="uppercase font-bold hover:text-color-accent">О компании</h2>
-					</NavLink>
-				</li>
-				<li className="">
-					<NavLink to={getAbout()}>
-						<h2 className="uppercase font-bold hover:text-color-accent transition duration-300 ease-in-out">Документы</h2>
-					</NavLink>
-				</li>
-				<li className="">
-					<NavLink to={getAbout()}>
-						<h2 className="uppercase font-bold hover:text-color-accent transition duration-300 ease-in-out">Персонал и оборудование</h2>
-					</NavLink>
-				</li>
-				<li className="">
-					<NavLink to={getAbout()}>
-						<h2 className="uppercase font-bold hover:text-color-accent transition duration-300 ease-in-out">Обратная связь</h2>
-					</NavLink>
-				</li>
+		<nav className='pb-4 px-10'>
+			<ul className="flex gap-16 justify-center items-center">
+				{
+					navLinks?.map((item, index) => (
+						<li className="text-center" key={index}>
+							<AppLink to={item?.link}>
+								<h2 className="uppercase font-bold hover:text-color-accent transition duration-300 ease-in-out">{item?.title}</h2>
+							</AppLink>
+						</li>
+					))
+				}
 			</ul>
 		</nav>
 	);

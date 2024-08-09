@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const NotFoundPage = () => {
+	useEffect(() => {
+		document.title = 'Страницы не существует';
+	}, [])
+
 	return (
-		<div>
+		<main className='flex-grow px-10 pt-2'>
 			NotFoundPage
-		</div>
+		</main>
 	);
 };
 

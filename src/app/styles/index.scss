@@ -8,6 +8,8 @@
 .app {
     min-height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }

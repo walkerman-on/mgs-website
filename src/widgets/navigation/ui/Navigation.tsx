@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAbout, getDocuments, getFeedback, getMain, getStaffAndEquipment } from 'app/providers/router';
+import { getAbout, getDocuments, getMain, getStaffAndEquipment } from 'app/providers/router';
 import { AppLink } from 'shared/ui/app-link';
 
 interface NavLink {

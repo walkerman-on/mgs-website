@@ -1,5 +1,5 @@
 import { NotFoundPage } from 'pages/not-found';
-import { getAbout, getDocuments, getMain, getNotFound } from './routes';
+import { getDocuments, getMain, getNotFound } from './routes';
 import { AppRoutesProps } from './types';
 import { MainPage } from 'pages/main';
 import { DocumentsPage } from 'pages/documents';

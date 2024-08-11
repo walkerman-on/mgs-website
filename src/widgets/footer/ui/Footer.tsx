@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navigation } from 'widgets/navigation';
 
 export const Footer = () => {
 	return (

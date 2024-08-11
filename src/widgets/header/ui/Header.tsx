@@ -7,7 +7,7 @@ import PhoneIcon from 'shared/assets/icons/PhoneIcon';
 export const Header = () => {
 	return (
 		<header className='flex flex-col gap-5 bg-sky'>
-			<section className="flex justify-between items-center py-5 px-10 gap-3">
+			<section className="flex justify-between py-5 px-10 gap-3">
 				<div className='flex gap-2.5'>
 					<div className="flex flex-col gap-0.5">
 						<p className='max-phone:text-center'>
@@ -21,7 +21,7 @@ export const Header = () => {
 								<Logo />
 							</div>
 							<p className="flex flex-col flex-wrap">
-								<p className='flex gap-1'>
+								<p className='flex gap-1 justify-center'>
 									<EmailIcon />
 									<h3 className="text-color-accent cursor-pointer"> mgsystems@inbox.ru</h3>
 								</p>

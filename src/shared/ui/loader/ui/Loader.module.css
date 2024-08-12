@@ -1,33 +1,10 @@
-@import "./reset.scss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.app {
-    min-height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-}
-
-.content {
-    flex-grow: 1;
-    padding: 10px 30px 5px 30px;
-    display: flex;
-    flex-direction: columnc;
-}
-
 .loader {
   width: 48px;
   height: 48px;
   display: block;
   margin: 20px auto;
   position: relative;
-  border: 3px solid #5085a5;
+  border: 3px solid red;
   border-radius: 50%;
   box-sizing: border-box;
   animation: animloader 2s linear infinite;
@@ -37,7 +14,7 @@
   box-sizing: border-box;
   width: 6px;
   height: 24px;
-  background: #5085a5;
+  background: #FFF;
   transform: rotate(-45deg);
   position: absolute;
   bottom: -20px;

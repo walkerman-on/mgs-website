@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "json-server -w src/shared/api/db.json -p 3001"
+    "server": "json-server -w public/db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [

@@ -1,36 +1,30 @@
 import { TextCard } from 'entities/text-card';
 import React, { useEffect, useState } from 'react';
 import { fetchDocuments } from '../api/fetchDocuments';
-
-const documents = [
-	{ paragraph: "Свидетельство о типовом одобрении (СТО) на изготовление РВД для подачи жидкостей под высоким давлением в судовых системах, выданное РМРС", id: "IW2T" },
-	{ paragraph: "Технические условия на изготовление РВД, одобренное РМРС", id: "Wrtl" },
-	{ paragraph: "Программа испытаний РВД, одобренное РМРС", id: "uFzu" },
-	{ paragraph: "Свидетельство о признании РКО на изготовление РВД", id: "vE9Q" },
-	{ paragraph: "Технические условия на изготовление РВД, одобренные РКО", id: "Lr5H" },
-]
+import { IDocument } from '../types';
 
 export const DocumentCards = () => {
-	const [documentCards, setDocumentCards] = useState([]);
-
+	const [documentCards, setDocumentCards] = useState<IDocument[]>([]);
 	useEffect(() => {
 		const loadDocumentCards = async () => {
 			const data = await fetchDocuments();
 			if (data) {
-				setDocumentCards(data);
+				setDocumentCards(data.content);
 			}
 		};
 
 		loadDocumentCards();
 	}, []);
 
-	console.log(documentCards)
+	const onCardClick = (documentID: string) => {
+		console.log("documentID", documentID)
+	}
 
 	return (
 		<ul className='flex flex-col gap-5'>
 			{
-				documents?.map(item => (
-					<TextCard title={item?.paragraph} id={item?.id} />
+				documentCards?.map(item => (
+					<TextCard title={item?.title} documentID={item?.documentID} key={item?.documentID} onCardClick={onCardClick} />
 				))
 			}
 		</ul>

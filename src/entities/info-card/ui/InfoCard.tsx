@@ -1,18 +1,12 @@
+import { IInfoCard } from 'features/info-cards';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import ArrowRightIcon from 'shared/assets/icons/ArrowRightIcon';
 import { twMerge } from 'tailwind-merge'
 
-interface IInfoCard {
-	title: string,
-	description: { paragraph: string }[],
-	id: string,
-	long: boolean,
-	iconURL: string,
-	linkTo?: string
-}
 
-export const InfoCard: FC<IInfoCard> = ({ title, description, id, long, linkTo, iconURL }) => {
+
+export const InfoCard: FC<IInfoCard> = ({ title, description, id, long }) => {
 	const baseStyle = "bg-bg-color rounded-lg py-3 px-5 flex flex-col justify-between"
 	const longStyle = "col-span-2"
 	const classes = twMerge(baseStyle, long && longStyle)
@@ -30,7 +24,7 @@ export const InfoCard: FC<IInfoCard> = ({ title, description, id, long, linkTo, 
 					))}
 				</p>
 			</div>
-			<Link to={linkTo}>
+			<Link to={""}>
 				<p className='flex items-center gap-1 hover:opacity-80 transition duration-300 ease-in-out'>
 					<h4 className='cursor-pointer text-color-accent font-medium'>Подробнее</h4>
 					<ArrowRightIcon />

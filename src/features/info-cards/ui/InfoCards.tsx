@@ -9,7 +9,7 @@ export const InfoCards = () => {
 		const loadInfoCards = async () => {
 			const data = await fetchInfoCards();
 			if (data) {
-				setInfoCards(data);
+				setInfoCards(data.content);
 			}
 		};
 
@@ -24,8 +24,6 @@ export const InfoCards = () => {
 						title={item?.title}
 						description={item?.description}
 						id={item?.id} long={item?.long}
-						iconURL={item?.iconURL}
-						linkTo={item?.linkTo}
 					/>
 				))
 			}

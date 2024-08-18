@@ -1,27 +1,13 @@
-import React, { FC, useState } from 'react';
-import { Modal } from 'shared/ui/modal';
+import { fetchDocumentImgById, IDocument } from 'features/document-cards';
+import { FC, useCallback } from 'react';
 
-interface ITextCard {
-	title: string,
-	id: string
-}
 
-export const TextCard: FC<ITextCard> = ({ title, id }) => {
-	const [show, setShow] = useState(false)
-	const onBtnClick = () => {
-		setShow(!show)
-	}
-
+export const TextCard: FC<IDocument> = ({ title, documentID, onCardClick }) => {
 	return (
-		<>
-			<li
-				onClick={onBtnClick}
-				className='bg-bg-color rounded-lg py-3 px-5 cursor-pointer font-medium hover:bg-color-accent hover:text-bg-color transition duration-300 ease-in-out' key={id}>
-				{title}
-			</li>
-			{/* <Modal show={show} onCloseButtonClick={onBtnClick}>
-				hello
-			</Modal> */}
-		</>
+		<li
+			onClick={() => onCardClick(documentID)}
+			className='bg-bg-color rounded-lg py-3 px-5 cursor-pointer font-medium hover:bg-color-accent hover:text-bg-color transition duration-300 ease-in-out' >
+			{title}
+		</li>
 	);
 };

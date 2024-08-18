@@ -21,22 +21,22 @@
 							{
 								"paragraph": "Свидетельство о типовом одобрении (СТО) на изготовление РВД для подачи жидкостей под высоким давлением в судовых системах, выданное РМРС",
 								"id": "IW2T",
-								"iconID": ""
+								"iconID": "F2l"
 							},
 							{
 								"paragraph": "Технические условия на изготовление РВД, одобренное РМРС",
 								"id": "Wrtl",
-								"iconID": ""
+								"iconID": "F2l"
 							},
 							{
 								"paragraph": "Программа испытаний РВД, одобренное РМРС",
 								"id": "uFzu",
-								"iconID": ""
+								"iconID": "F2l"
 							},
 							{
 								"paragraph": "Свидетельство о признании РКО на изготовление РВД",
 								"id": "vE9Q",
-								"iconID": ""
+								"iconID": "F2l"
 							},
 							{
 								"paragraph": "Технические условия на изготовление РВД, одобренные РКО",
@@ -46,7 +46,7 @@
 						],
 						"id": "documents",
 						"long": true,
-						"iconID": ""
+						"iconID": "wtI"
 					},
 					{
 						"title": "Доп.оборудование",
@@ -59,7 +59,7 @@
 						],
 						"id": "equipment",
 						"long": false,
-						"iconID": ""
+						"iconID": "Ezg"
 					},
 					{
 						"title": "Оборудование",
@@ -72,7 +72,7 @@
 						],
 						"id": "equipment",
 						"long": true,
-						"iconID": ""
+						"iconID": "2li"
 					}
 				]
 			},
@@ -80,37 +80,59 @@
 				"id": "documents",
 				"content": [
 					{
-						"id": "document_1",
+						"documentID": "document_1",
+						"iconID": "",
 						"title": "Свидетельство о типовом одобрении (СТО) на изготовление РВД для подачи жидкостей под высоким давлением в судовых системах, выданное РМРС",
 						"description": [
 							{
-								"paragraph": "",
+								"paragraph": "Описание почему так важен этот документ",
 								"id": "IW2T"
 							}
-						],
-						"iconID": ""
+						]
 					},
 					{
-						"id": "document_2",
+						"documentID": "document_2",
+						"iconID": "",
 						"title": "Технические условия на изготовление РВД, одобренные РМРС",
 						"description": [
 							{
-								"paragraph": "",
+								"paragraph": "Описание почему так важен этот документ",
 								"id": "Wrtl"
 							}
-						],
-						"iconID": ""
+						]
 					},
 					{
-						"id": "document_3",
+						"documentID": "document_3",
+						"iconID": "",
 						"title": "Программа испытаний РВД, одобренная РМРС",
 						"description": [
 							{
-								"paragraph": "",
+								"paragraph": "Описание почему так важен этот документ",
 								"id": "Wrtl"
 							}
-						],
-						"iconID": ""
+						]
+					},
+					{
+						"documentID": "document_4",
+						"iconID": "",
+						"title": "Свидетельство о признании РКО на изготовление РВД",
+						"description": [
+							{
+								"paragraph": "Описание почему так важен этот документ",
+								"id": "Wrtl"
+							}
+						]
+					},
+					{
+						"documentID": "document_5",
+						"iconID": "",
+						"title": "Технические условия на изготовление РВД, одобренные РКО",
+						"description": [
+							{
+								"paragraph": "Описание почему так важен этот документ",
+								"id": "Wrtl"
+							}
+						]
 					}
 				]
 			}
@@ -118,23 +140,23 @@
 		"icons": [
 			{
 				"id": "cPb",
-				"path": ""
+				"path": "./icons/InfoIcon.tsx"
 			},
 			{
 				"id": "F2l",
-				"path": ""
+				"path": "./icons/CheckIcon.tsx"
 			},
 			{
 				"id": "wtI",
-				"path": ""
+				"path": "./icons/DocumentsIcon.tsx"
 			},
 			{
 				"id": "Ezg",
-				"path": ""
+				"path": "./icons/LaserIcon.tsx"
 			},
 			{
 				"id": "2li",
-				"path": ""
+				"path": "./icons/EquipmentIcon.tsx"
 			},
 			{
 				"id": "omw",
@@ -147,6 +169,23 @@
 			{
 				"id": "iWT",
 				"path": ""
+			}
+		],
+		"documents": [
+			{
+				"id": "document_1",
+				"imgSRC": "./images/document_1.png",
+				"description": "Сертификат \"Свидетельство о типовом одобрении (СТО) на изготовление РВД для подачи жидкостей под высоким давлением в судовых системах, выданное РМРС\""
+			},
+			{
+				"id": "document_2",
+				"imgSRC": "./images/document_2.png",
+				"description": "Сертификат \"Технические условия на изготовление РВД, одобренные РМРС\""
+			},
+			{
+				"id": "document_3",
+				"imgSRC": "./images/document_3.png",
+				"description": "Сертификат \"Программа испытаний РВД, одобренная РМРС\""
 			}
 		]
 	}

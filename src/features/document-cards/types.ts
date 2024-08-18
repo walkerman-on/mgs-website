@@ -20,5 +20,6 @@ export interface IDocument {
 			id: string
 		}
 	],
-	onCardClick?: (id: string) => void
+	onCardClick?: (id: string) => void,
+	active?: boolean
 }

@@ -1,5 +1,6 @@
 import { TextCard } from 'entities/text-card';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchDocuments } from '../api/fetchDocuments';
 
 const documents = [
 	{ paragraph: "Свидетельство о типовом одобрении (СТО) на изготовление РВД для подачи жидкостей под высоким давлением в судовых системах, выданное РМРС", id: "IW2T" },
@@ -10,6 +11,21 @@ const documents = [
 ]
 
 export const DocumentCards = () => {
+	const [documentCards, setDocumentCards] = useState([]);
+
+	useEffect(() => {
+		const loadDocumentCards = async () => {
+			const data = await fetchDocuments();
+			if (data) {
+				setDocumentCards(data);
+			}
+		};
+
+		loadDocumentCards();
+	}, []);
+
+	console.log(documentCards)
+
 	return (
 		<ul className='flex flex-col gap-5'>
 			{

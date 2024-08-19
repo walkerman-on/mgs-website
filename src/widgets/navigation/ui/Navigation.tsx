@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAbout, getDocuments, getMain, getStaffAndEquipment } from 'app/providers/router';
+import { getAbout, getDocuments, getEquipment, getMain } from 'app/providers/router';
 import { AppLink } from 'shared/ui/app-link';
 
 interface NavLink {
@@ -12,7 +12,7 @@ export const Navigation = () => {
 		{ title: "Главная", link: getMain() },
 		{ title: "О компании", link: getAbout() },
 		{ title: "Документы", link: getDocuments() },
-		{ title: "Оборудование", link: getStaffAndEquipment() },
+		{ title: "Оборудование", link: getEquipment() },
 	]
 	return (
 		<nav className='pb-4 px-10'>

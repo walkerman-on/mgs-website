@@ -1,0 +1,1 @@
+export { EquipmentPageAsync as EquipmentPage } from "./ui/EquipmentPage.async"

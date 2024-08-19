@@ -135,6 +135,51 @@
 						]
 					}
 				]
+			},
+			{
+				"id": "equipment",
+				"content": [
+					{
+						"equipmentID": "equipment_1",
+						"title": "",
+						"description": [
+							{
+								"paragraph": "Описание почему так важно это оборудование",
+								"id": "IW2T"
+							}
+						]
+					},
+					{
+						"equipmentID": "equipment_2",
+						"title": "",
+						"description": [
+							{
+								"paragraph": "Описание почему так важно это оборудование",
+								"id": "IW2T"
+							}
+						]
+					},
+					{
+						"equipmentID": "equipment_3",
+						"title": "",
+						"description": [
+							{
+								"paragraph": "Описание почему так важно это оборудование",
+								"id": "IW2T"
+							}
+						]
+					},
+					{
+						"equipmentID": "equipment_4",
+						"title": "",
+						"description": [
+							{
+								"paragraph": "Описание почему так важен это оборудование",
+								"id": "IW2T"
+							}
+						]
+					}
+				]
 			}
 		],
 		"icons": [
@@ -186,6 +231,38 @@
 				"id": "document_3",
 				"imgSRC": "./images/document_3.png",
 				"description": "Сертификат \"Программа испытаний РВД, одобренная РМРС\""
+			},
+			{
+				"id": "document_4",
+				"imgSRC": "./images/document_4.png",
+				"description": "Сертификат \"Свидетельство о признании РКО на изготовление РВД\""
+			},
+			{
+				"id": "document_5",
+				"imgSRC": "./images/document_5.png",
+				"description": "Сертификат \"Технические условия на изготовление РВД, одобренные РКО\""
+			}
+		],
+		"equipment": [
+			{
+				"id": "equipment_1",
+				"imgSRC": "./images/equipment_1.jpg",
+				"description": "Фото 1 - Производственная линия из отрезного станка, окорочного станка и обжимного станка"
+			},
+			{
+				"id": "equipment_2",
+				"imgSRC": "./images/equipment_2.jpg",
+				"description": "Фото 2 - Обжимной станок"
+			},
+			{
+				"id": "equipment_3",
+				"imgSRC": "./images/equipment_3.jpg",
+				"description": "Фото 3 - Испытательный стенд с компрессором"
+			},
+			{
+				"id": "equipment_4",
+				"imgSRC": "./images/equipment_4.jpg",
+				"description": "Фото 4 - Лазерный маркиратор"
 			}
 		]
 	}

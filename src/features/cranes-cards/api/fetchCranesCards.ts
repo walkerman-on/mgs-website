@@ -29,11 +29,11 @@ interface PageContent {
 
 
 
-export const fetchInfoCards = async (): Promise<PageContent | undefined> => {
+export const fetchCranesCards = async (): Promise<PageContent | undefined> => {
 	try {
 		// Загружаем данные о контенте и иконках
 		const [responseContent, responseIcons] = await Promise.all([
-			$api.get('/pages/main'),
+			$api.get('/pages/cranes'),
 			$api.get('/icons'),
 		]);
 

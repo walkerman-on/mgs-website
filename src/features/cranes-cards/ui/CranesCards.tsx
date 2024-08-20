@@ -1,13 +1,13 @@
 import { InfoCard } from 'entities/info-card';
 import React, { useEffect, useState } from 'react';
-import { fetchInfoCards } from '../api/fetchInfoCards';
+import { fetchCranesCards } from '../api/fetchCranesCards';
 
-export const InfoCards = () => {
+export const CranesCards = () => {
 	const [infoCards, setInfoCards] = useState([]);
 
 	useEffect(() => {
 		const loadInfoCards = async () => {
-			const data = await fetchInfoCards();
+			const data = await fetchCranesCards();
 			if (data) {
 				setInfoCards(data.content);
 			}

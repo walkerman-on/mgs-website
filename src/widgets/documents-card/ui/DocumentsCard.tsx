@@ -22,7 +22,7 @@ export const DocumentsCard = () => {
 		<>
 			{
 				documentImg ?
-					<div className={`text-center overflow-y-scroll overflow-x-hidden max-h-svh w`}>
+					<div className={`text-center overflow-y-scroll overflow-x-hidden max-h-svh bg-bg-color p-3 rounded-xl`}>
 						<img src={documentImg?.imgSRC} alt={documentImg?.description} />
 					</div>
 					:

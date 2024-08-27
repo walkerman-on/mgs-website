@@ -58,7 +58,6 @@ export const fetchInfoCards = async (): Promise<PageContent | undefined> => {
 			});
 		});
 
-		console.log(content);
 		return content;
 	} catch (error) {
 		console.warn(error);

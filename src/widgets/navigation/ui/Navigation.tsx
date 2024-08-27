@@ -13,7 +13,7 @@ export const Navigation = () => {
 		{ title: "Документы", link: getDocuments() },
 		{ title: "Оборудование", link: getEquipment() },
 		{ title: "Краны \"Либхер\"", link: getCranes() },
-		{ title: "Контакты", link: getContacts() },
+		// { title: "Контакты", link: getContacts() },
 	]
 	return (
 		<nav className='pb-4 px-10'>

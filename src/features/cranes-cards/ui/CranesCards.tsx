@@ -17,7 +17,7 @@ export const CranesCards = () => {
 	}, []);
 
 	return (
-		<ul className='grid grid-cols-3 grid-rows-2 gap-5 flex-grow max-tablet:grid-cols-1 max-tablet:gap-x-0'>
+		<ul className='flex-grow flex flex-col gap-5'>
 			{
 				infoCards?.map(item => (
 					<InfoCard

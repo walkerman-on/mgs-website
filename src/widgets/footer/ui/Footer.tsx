@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer = () => {
 	return (
-		<footer className='pb-5 pt-8 flex flex-col justify-center items-center flex-shrink-0 text-center'>
+		<footer className='pb-5 pt-8 flex flex-col justify-center items-center text-center '>
 			<p className='flex gap-3 text-sm max-phone:text-xs'>
 				<span>ИНН 2315230435</span>
 				<span>КПП 231501001</span>

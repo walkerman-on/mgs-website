@@ -1,0 +1,1 @@
+export { fetchContactsImg } from "./api/fetchContactsImg"

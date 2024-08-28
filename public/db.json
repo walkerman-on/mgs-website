@@ -86,6 +86,19 @@
 						"id": "cranes",
 						"long": false,
 						"iconID": "cBr"
+					},
+					{
+						"title": "Заказ",
+						"description": [
+							{
+								"paragraph": "Для того чтобы сделать заказ необходимо либо позвонить, либо написать нам на почту (дистанционный вариант) или приехать лично к нам в офис",
+								"id": "ICHO",
+								"iconID": ""
+							}
+						],
+						"id": "order",
+						"long": true,
+						"iconID": "eIm"
 					}
 				]
 			},
@@ -351,6 +364,13 @@
 				"id": "cranes_8",
 				"imgSRC": "./images/cranes_8.jpg",
 				"description": "Готовая продукция"
+			}
+		],
+		"contacts": [
+			{
+				"id": "contacts",
+				"imgSRC": "./images/contacts.jpg",
+				"description": "Фото офиса"
 			}
 		]
 	}

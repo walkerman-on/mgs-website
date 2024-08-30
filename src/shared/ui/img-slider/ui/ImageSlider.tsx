@@ -1,41 +1,48 @@
+// src/ImageSlider.tsx
+
 import React, { useState } from 'react';
+import ArrowLeftIcon from 'shared/assets/icons/ArrowLeftIcon';
+import ArrowRightIcon from 'shared/assets/icons/ArrowRightIcon';
 
 interface ImageSliderProps {
 	images: string[];
+	description: string[]
 }
 
-export const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
+export const ImageSlider: React.FC<ImageSliderProps> = ({ images, description }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
-	const nextSlide = () => {
-		setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+	const goToPrevious = () => {
+		setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
 	};
 
-	const prevSlide = () => {
-		setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+	const goToNext = () => {
+		setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
 	};
 
 	return (
-		<div className="relative w-full max-w-4xl mx-auto overflow-hidden">
+		<div className="relative w-full max-w-3xl mx-auto flex-1 overflow-hidden flex justify-center items-center flex-col">
 			<button
-				className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full opacity-75 hover:opacity-100"
-				onClick={prevSlide}
+				className="absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer rounded-lg bg-bg-color hover:scale-110 transition duration-300 ease-in-out"
+				onClick={goToPrevious}
 			>
-				❮
+				<ArrowLeftIcon />
 			</button>
-			<div className="relative">
+			<div className="w-full">
 				<img
 					src={images[currentIndex]}
-					alt={`slide-${currentIndex}`}
-					className="w-full h-auto block"
+					alt="slider"
+					className="w-full h-auto object-cover"
 				/>
+
 			</div>
 			<button
-				className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full opacity-75 hover:opacity-100"
-				onClick={nextSlide}
+				className="absolute top-1/2 right-4 transform -translate-y-1/2 rounded-lg bg-bg-color cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+				onClick={goToNext}
 			>
-				❯
+				<ArrowRightIcon />
 			</button>
+			<span>{description[currentIndex]}</span>
 		</div>
 	);
 };

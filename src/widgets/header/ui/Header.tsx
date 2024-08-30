@@ -19,14 +19,14 @@ export const Header = () => {
 								</div>
 								<div>
 									<h1 className='text-xl font-semibold text-bg-color'>Морские Гидравлические Системы</h1>
-									<h2 className='text-base text-bg-color font-medium'>имеем сертификаты РКО и РМРС</h2>
+									<h2 className='text-base text-color-gray font-medium'>имеем сертификаты РКО и РМРС</h2>
 								</div>
 							</div>
 						</NavLink>
 					</div>
 					<Navigation />
 				</div>
-				<span className='text-center text-3xl font-black px-30 py-5 text-bg-color leading-10'>
+				<span className='text-center text-3xl font-black px-40 py-5 text-bg-color leading-10'>
 					Рукава высокого давления для морских и речных судов, портовой техники, кранов, экскаваторов, погрузчиков и другой спец. техники
 				</span>
 			</section>

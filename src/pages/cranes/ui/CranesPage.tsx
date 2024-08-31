@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { ImageSlider } from 'shared/ui/img-slider';
 
 const CranesPage = () => {
+	useEffect(() => {
+		document.title = 'Краны "Либхер" - ООО "Морские Гидравлические Системы';
+	}, [])
+
 	const [cranesImg, setCranesImg] = useState([]);
 
 	useEffect(() => {
@@ -18,7 +22,7 @@ const CranesPage = () => {
 	}, []);
 
 	return (
-		<main className='content grid grid-cols-2'>
+		<main className='content grid grid-cols-5 gap-5'>
 			<CranesCards />
 			<ImageSlider images={cranesImg?.map(item => item?.imgSRC)} description={cranesImg?.map(item => item?.description)} />
 		</main>

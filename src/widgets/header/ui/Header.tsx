@@ -14,12 +14,12 @@ export const Header = () => {
 					<div className='flex flex-col'>
 						<NavLink to={getMain()}>
 							<div className='flex items-center gap-3'>
-								<div className='w-15 h-14 bg-bg-color rounded-lg py-2 px-1'>
+								<div className='w-15 h-14 bg-bg-color rounded-lg py-2 px-1 hover:scale-105 transition duration-300 ease-in-out'>
 									<Logo />
 								</div>
 								<div>
 									<h1 className='text-xl font-semibold text-bg-color'>Морские Гидравлические Системы</h1>
-									<h2 className='text-base text-color-gray font-medium'>имеем сертификаты РКО и РМРС</h2>
+									<h2 className='text-base text-color-gray font-medium opacity-80'>имеем сертификаты РКО и РМРС</h2>
 								</div>
 							</div>
 						</NavLink>

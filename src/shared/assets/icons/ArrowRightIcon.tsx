@@ -1,5 +1,5 @@
 const ArrowRightIcon = ({
-  color = "#5085a5",
+  color = "#f7f9fb",
   width = 36,
   height = 36,
 }: {

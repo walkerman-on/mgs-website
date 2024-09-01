@@ -19,29 +19,27 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images, description })
 	};
 
 	return (
-		<div className="relative w-full max-w-3xl mx-auto flex flex-col items-center col-span-2 bg-bg-color rounded-lg">
-			<div className="w-full max-h-96 flex items-center justify-center bg-bg-color rounded-lg overflow-hidden">
-				<img
-					src={images[currentIndex]}
-					alt="slider"
-					className="max-w-full max-h-full object-contain"
-				/>
-			</div>
-			<div className="absolute top-1/2 left-4 transform -translate-y-1/2 flex gap-2">
+		<div className="bg-bg-color rounded-lg pt-5 px-10 flex flex-col gap-5">
+			<img
+				src={images[currentIndex]}
+				alt="slider"
+				className="w-full h-96 object-contain"
+			/>
+			<div className="flex gap-5 justify-center">
 				<button
-					className="rounded-lg bg-color-accent hover:scale-110 transition duration-300 ease-in-out"
+					className="rounded-lg bg-color-accent hover:scale-110 transition duration-300 ease-in-out w-full"
 					onClick={goToPrevious}
 				>
 					<ArrowLeftIcon />
 				</button>
 				<button
-					className="rounded-lg bg-color-accent hover:scale-110 transition duration-300 ease-in-out"
+					className="rounded-lg bg-color-accent hover:scale-110 transition duration-300 ease-in-out w-full"
 					onClick={goToNext}
 				>
 					<ArrowRightIcon />
 				</button>
 			</div>
-			<span className="mt-2 text-center">{description[currentIndex]}</span>
+			<span className="text-center block">{description[currentIndex]}</span>
 		</div>
 	);
 };

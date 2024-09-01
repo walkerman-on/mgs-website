@@ -12,8 +12,6 @@ const ArrowRightIcon = ({
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "50px",
-      width: "50px",
     }}
   >
     <svg width={width} height={height} viewBox="0 -960 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">

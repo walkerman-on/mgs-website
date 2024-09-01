@@ -22,7 +22,7 @@ export const Navigation = () => {
 					navLinks?.map((item, index) => (
 						<li className="text-center" key={index}>
 							<AppLink to={item?.link}>
-								<h2 className=" text-color-gray hover:scale-105 underline-offset-8 transition duration-300 ease-in-out ">{item?.title}</h2>
+								<h2 className="hover:scale-105 underline-offset-8 transition duration-300 ease-in-out ">{item?.title}</h2>
 							</AppLink>
 						</li>
 					))

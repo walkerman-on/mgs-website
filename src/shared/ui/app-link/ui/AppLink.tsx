@@ -13,7 +13,7 @@ export const AppLink: FC<IAppLink> = memo(({ children, to }) => {
 			className={({ isActive }) =>
 				isActive
 					? "text-bg-color font-bold"
-					: "text-default-color font-medium opacity-80"
+					: "text-color-gray font-medium opacity-80"
 			}
 		>
 			{children}

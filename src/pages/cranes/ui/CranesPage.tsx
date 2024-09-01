@@ -22,7 +22,7 @@ const CranesPage = () => {
 	}, []);
 
 	return (
-		<main className='content grid grid-cols-5 gap-5'>
+		<main className='content grid grid-cols-3 gap-5'>
 			<CranesCards />
 			<ImageSlider images={cranesImg?.map(item => item?.imgSRC)} description={cranesImg?.map(item => item?.description)} />
 		</main>

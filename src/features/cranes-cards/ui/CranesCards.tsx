@@ -17,7 +17,7 @@ export const CranesCards = () => {
 	}, []);
 
 	return (
-		<ul className='flex-grow flex flex-col gap-5 col-span-3'>
+		<ul className='flex-grow flex flex-col gap-5 col-span-2'>
 			{
 				infoCards?.map(item => (
 					<InfoCard

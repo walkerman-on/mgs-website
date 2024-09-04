@@ -1,4 +1,4 @@
-export const getMain = () => "/main"
+export const getMain = () => "/"
 export const getContacts = () => "/contacts"
 export const getNotFound = () => '*';
 export const getDocuments = () => "/documents"

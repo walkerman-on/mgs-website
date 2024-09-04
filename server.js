@@ -1,8 +1,14 @@
-const jsonServer = require("json-server");
+const jsonServer = require('json-server');
+const path = require('path');
+const fs = require('fs');
+
 const server = jsonServer.create();
-const router = jsonServer.router("./public/db.json");
-const middlewares = jsonServer.defaults({ static: "./build" });
-const port = 3001;
+const router = jsonServer.router(path.join(__dirname, 'public', 'db.json')); // Путь к db.json в папке public
+const middlewares = jsonServer.defaults();
+
 server.use(middlewares);
 server.use(router);
-server.listen(port);
+
+module.exports = (req, res) => {
+  return server(req, res);
+};

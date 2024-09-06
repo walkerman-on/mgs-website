@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { getContacts, getCranes, getDocuments, getEquipment, getMain } from 'app/providers/router';
 import { AppLink } from 'shared/ui/app-link';
+import { Interface } from 'readline';
 
 interface NavLink {
 	title: string;
 	link: string;
 }
 
-export const Navigation = () => {
+interface INavigation {
+	className?: string
+}
+
+export const Navigation: FC<INavigation> = ({ className }) => {
 	const navLinks: NavLink[] = [
 		{ title: "Главная", link: getMain() },
 		{ title: "Документы", link: getDocuments() },
@@ -16,8 +21,8 @@ export const Navigation = () => {
 		{ title: "Контакты", link: getContacts() },
 	]
 	return (
-		<nav className=''>
-			<ul className="flex gap-10 justify-center items-center max-tablet:gap-4 max-phone:grid max-phone:grid-cols-2 max-phone:grid-rows-2 max-phone:gap-1">
+		<nav className={className}>
+			<ul className="flex gap-10 justify-center items-center px-5 max-phone:flex-col pt-5 max-phone:gap-5 max-phone:items-start">
 				{
 					navLinks?.map((item, index) => (
 						<li className="text-center" key={index}>

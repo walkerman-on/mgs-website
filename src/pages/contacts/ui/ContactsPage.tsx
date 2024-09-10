@@ -24,7 +24,7 @@ const ContactsPage = () => {
 	}, []);
 
 	return (
-		<main className='content grid grid-cols-2 gap-6'>
+		<main className='content grid grid-cols-2 gap-6 max-phone:grid-cols-1'>
 			{
 				equipmentCards?.map(item => (
 					<div className="bg-bg-color rounded-lg py-3 px-3">
@@ -34,25 +34,25 @@ const ContactsPage = () => {
 			}
 			<div className="bg-bg-color rounded-lg py-8 px-5 flex flex-col gap-10">
 				<div>
-					<h2 className="text-xl uppercase font-semibold text-color-accent">Местоположение</h2>
+					<h2 className="text-xl uppercase font-semibold text-color-accent max-phone:text-lg">Местоположение</h2>
 					<p className='flex gap-2 items-center'>
-						<span className="font-medium text-xl pt-2">353915, Краснодарский край, г. Новороссийск, ул. Пархоменко, д.45</span>
+						<span className="font-medium text-xl pt-2 max-phone:text-lg">353915, Краснодарский край, г. Новороссийск, ул. Пархоменко, д.45</span>
 					</p>
 				</div>
 				<div>
-					<h2 className="text-xl uppercase font-semibold text-color-accent ">Контакты</h2>
+					<h2 className="text-xl uppercase font-semibold text-color-accent max-phone:text-lg">Контакты</h2>
 					<p className='flex flex-col text-xl pt-2 gap-1'>
 						<p className='flex gap-2 items-center'>
 							<EmailIcon />
-							<a href="mailto:mgsystems@inbox.ru" className="font-medium cursor-pointer hover:text-color-accent transition duration-300 ease-in-out">mgsystems@inbox.ru</a>
+							<a href="mailto:mgsystems@inbox.ru" className="font-medium cursor-pointer hover:text-color-accent transition duration-300 ease-in-out max-phone:text-lg">mgsystems@inbox.ru</a>
 						</p>
 						<p className='flex gap-2 items-center'>
 							<PhoneIcon />
-							<a href="tel:+79886684040" className="font-medium cursor-pointer hover:text-color-accent transition duration-300 ease-in-out"> +7 988 668-40-40 </a>
+							<a href="tel:+79886684040" className="font-medium cursor-pointer hover:text-color-accent transition duration-300 ease-in-out max-phone:text-lg"> +7 988 668-40-40 </a>
 						</p>
 						<p className='flex gap-2 items-center'>
 							<PhoneIcon />
-							<a href="tel:+79184766560" className="font-medium cursor-pointer hover:text-color-accent transition duration-300 ease-in-out"> +7 918 476-65-60</a>
+							<a href="tel:+79184766560" className="font-medium cursor-pointer hover:text-color-accent transition duration-300 ease-in-out max-phone:text-lg"> +7 918 476-65-60</a>
 						</p>
 					</p>
 				</div>

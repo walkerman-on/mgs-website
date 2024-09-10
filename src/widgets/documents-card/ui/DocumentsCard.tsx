@@ -27,7 +27,7 @@ export const DocumentsCard = () => {
 					</div>
 					:
 					<div className='flex flex-col justify-center items-center gap-4'>
-						<h2 className="text-xl">Выберите интересующий документ, чтобы ознакомиться с ним</h2>
+						<h2 className="text-xl max-phone:text-base text-center">Выберите интересующий документ, чтобы ознакомиться с ним</h2>
 						<Loader />
 					</div>
 			}

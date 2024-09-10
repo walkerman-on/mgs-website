@@ -39,7 +39,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images, description })
 					<ArrowRightIcon />
 				</button>
 			</div>
-			<span className="text-center block">{description[currentIndex]}</span>
+			<span className="text-center block max-phone:text-sm">{description[currentIndex]}</span>
 		</div>
 	);
 };

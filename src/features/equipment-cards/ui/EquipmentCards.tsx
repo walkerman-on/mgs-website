@@ -16,10 +16,10 @@ export const EquipmentCards = () => {
 	}, []);
 
 	return (
-		<ul className='grid grid-cols-2 grid-rows-2 gap-5'>
+		<ul className='grid grid-cols-2 grid-rows-2 gap-5 max-phone:grid-cols-1'>
 			{
 				equipmentCards?.map(item => (
-					<li className='bg-bg-color p-3 rounded-lg grid place-items-center'>
+					<li className='bg-bg-color p-3 rounded-lg grid place-items-center '>
 						<img src={item?.imgSRC} alt={item?.description} />
 						<span className='text-center font-medium'>{item?.description}</span>
 					</li>

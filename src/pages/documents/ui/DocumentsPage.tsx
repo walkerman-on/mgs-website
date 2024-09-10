@@ -11,7 +11,7 @@ const DocumentsPage = () => {
 	return (
 		<DocumentProvider>
 			<main className='content'>
-				<section className='grid grid-cols-[1.5fr_2fr] pt-2 gap-8 '>
+				<section className='grid grid-cols-[1.5fr_2fr] pt-2 gap-8 max-phone:grid-cols-1'>
 					<Sidebar />
 					<DocumentsCard />
 				</section>

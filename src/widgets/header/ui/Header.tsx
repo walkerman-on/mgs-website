@@ -29,7 +29,7 @@ export const Header = () => {
 									</div>
 									<div>
 										<h1 className='text-xl font-semibold text-bg-color max-phone:text-lg'>Морские Гидравлические Системы</h1>
-										<h2 className='text-base text-color-gray font-medium opacity-80'>имеем сертификаты РКО и РМРС</h2>
+										<h2 className='text-base text-color-gray font-medium opacity-80'>наша продукция одобрена РМРС и РКО</h2>
 									</div>
 								</div>
 							</NavLink>
@@ -37,7 +37,7 @@ export const Header = () => {
 						<Navigation className="max-phone:hidden max-tablet:hidden max-laptop:hidden" />
 					</div>
 					<span className='text-center text-3xl font-black px-40 py-5 text-bg-color leading-10 max-phone:hidden max-tablet:text-xl max-tablet:px-5 max-desktop:px-5'>
-						Рукава высокого давления для морских и речных судов, портовой техники, кранов, экскаваторов, погрузчиков и другой спец. техники
+						Рукава высокого давления для морских и речных судов, кранов, экскаваторов, погрузчиков и другой спец.техники
 					</span>
 				</div>
 				<div className='hidden max-tablet:block cursor-pointer max-laptop:block'>

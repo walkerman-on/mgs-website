@@ -3,6 +3,7 @@ import { fetchEquipment } from "features/equipment-cards";
 import { useEffect, useState } from "react";
 import EmailIcon from "shared/assets/icons/EmailIcon";
 import PhoneIcon from "shared/assets/icons/PhoneIcon";
+import { Helmet } from 'react-helmet';
 
 const ContactsPage = () => {
 	useEffect(() => {
@@ -25,6 +26,12 @@ const ContactsPage = () => {
 
 	return (
 		<main className='content grid grid-cols-2 gap-6 max-phone:grid-cols-1'>
+			<Helmet>
+				<meta
+					name="description"
+					content="Свяжитесь с нами! Здесь вы найдете всю необходимую информацию для связи с нашей компанией. Мы готовы ответить на ваши вопросы и помочь с оформлением заказа на РВД."
+				/>
+			</Helmet>
 			{
 				equipmentCards?.map(item => (
 					<div className="bg-bg-color rounded-lg py-3 px-3">

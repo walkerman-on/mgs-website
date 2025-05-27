@@ -17,7 +17,7 @@ export const Navigation: FC<INavigation> = ({ className }) => {
 		{ title: "Документы", link: getDocuments() },
 		{ title: "Оборудование", link: getEquipment() },
 		{ title: "Краны \"Либхер\"", link: getCranes() },
-		{ title: "Контроль выбросов", link: getEmissionControl() },
+		{ title: "Контроль выбросов ВВ", link: getEmissionControl() },
 		{ title: "Контакты", link: getContacts() },
 	];
 

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { getContacts, getCranes, getDocuments, getEquipment, getMain } from 'app/providers/router';
+import {getContacts, getCranes, getDocuments, getEmissionControl, getEquipment, getMain} from 'app/providers/router';
 import { AppLink } from 'shared/ui/app-link';
 
 interface NavLink {
@@ -17,6 +17,7 @@ export const Navigation: FC<INavigation> = ({ className }) => {
 		{ title: "Документы", link: getDocuments() },
 		{ title: "Оборудование", link: getEquipment() },
 		{ title: "Краны \"Либхер\"", link: getCranes() },
+		{ title: "Контроль выбросов", link: getEmissionControl() },
 		{ title: "Контакты", link: getContacts() },
 	];
 

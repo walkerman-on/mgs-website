@@ -1,11 +1,12 @@
 import { NotFoundPage } from 'pages/not-found';
-import { getContacts, getCranes, getDocuments, getEquipment, getMain, getNotFound } from './routes';
+import {getContacts, getCranes, getDocuments, getEmissionControl, getEquipment, getMain, getNotFound} from './routes';
 import { AppRoutesProps } from './types';
 import { MainPage } from 'pages/main';
 import { DocumentsPage } from 'pages/documents';
 import { EquipmentPage } from 'pages/equipment';
 import { CranesPage } from 'pages/cranes';
 import { ContactsPage } from 'pages/contacts';
+import { EmissionControlPage} from "pages/emission-control";
 
 
 export enum AppRoutes {
@@ -14,7 +15,8 @@ export enum AppRoutes {
 	EQUIPMENT = "equipment",
 	CRANES = "cranes",
 	CONTACTS = "contacts",
-	NOT_FOUND = 'not_found'
+	NOT_FOUND = 'not_found',
+	EMISSION_CONTROL = 'emission_control',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -24,6 +26,7 @@ export const RoutePath: Record<AppRoutes, string> = {
 	[AppRoutes.CRANES]: getCranes(),
 	[AppRoutes.CONTACTS]: getContacts(),
 	[AppRoutes.NOT_FOUND]: getNotFound(),
+	[AppRoutes.EMISSION_CONTROL]: getEmissionControl(),
 };
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
@@ -46,6 +49,10 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
 	[AppRoutes.CONTACTS]: {
 		path: RoutePath.contacts,
 		element: <ContactsPage />,
+	},
+	[AppRoutes.EMISSION_CONTROL]: {
+		path: RoutePath.emission_control,
+		element: <EmissionControlPage />,
 	},
 	[AppRoutes.NOT_FOUND]: {
 		path: RoutePath.not_found,
